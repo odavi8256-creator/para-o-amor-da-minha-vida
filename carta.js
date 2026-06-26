@@ -1,33 +1,21 @@
 function abrirCarta() {
     document.getElementById("inicio").innerHTML = `
-        <div class="carta">
+        <div class="carta" style="
+            max-width:800px;
+            margin:auto;
+            padding:20px;
+            text-align:center;
+        ">
             <h1>💌 Para o amor da minha vida 💌</h1>
 
-            <div id="textoCarta" style="
-                max-width:700px;
-                margin:auto;
-                text-align:left;
-                background:#fff;
-                padding:20px;
+            <div style="
+                background:white;
+                padding:25px;
                 border-radius:15px;
+                text-align:left;
                 line-height:1.8;
                 white-space:pre-line;
-            ">
-
-function abrirCarta() {
-    document.getElementById("inicio").innerHTML = `
-        <div class="carta">
-            <h1>💌 Para o amor da minha vida 💌</h1>
-
-            <div id="textoCarta" style="
-                max-width:700px;
-                margin:auto;
-                text-align:left;
-                background:#fff;
-                padding:20px;
-                border-radius:15px;
-                line-height:1.8;
-                white-space:pre-line;
+                box-shadow:0 0 15px rgba(0,0,0,0.2);
             ">
 Aí meu amor, eu qro te falar tanta coisa mas não consegui falar, acho que aqui é a melhor forma de te contar tudo e falar tudo que eu amo, resumindo, você.
 
@@ -46,23 +34,6 @@ E amor, vc disse que gosta de novela, toda novela tem sua história, toda novela
 Eu qria escrever a minha história de amor baseada em fatos reais, com o nome, Como eu conheci o amor da minha vida. E assim eu começaria a contar toda a minha trajetória, mas essa não seria a melhor parte.
 
 A melhor parte seria aquela em que eu te conheci, vi os olhos e o sorriso mais lindos do mundo, e conheci a pessoa mais doce desse mundo, e assim começa a história de como um mlk problema, doido da cabeça, teve a maior sorte da vida e encontrou o seu trevo de 4 folhas.
-            </div>
-
-            <br>
-
-            <audio controls autoplay>
-                <source src="musica.mp3" type="audio/mpeg">
-            </audio>
-
-            <br><br>
-
-            <button onclick="location.reload()">
-                ❤️ Recomeçar
-            </button>
-        </div>
-    `;
-}
-
             </div>
 
             <br>
