@@ -44,7 +44,7 @@ function iniciarJogo2() {
         `;
 
         document.getElementById("surpresa").addEventListener("click", () => {
-            // Aqui depois vamos abrir a carta e iniciar a música.
-        });
+    abrirCarta();
+});
     });
 }
