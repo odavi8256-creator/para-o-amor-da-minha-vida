@@ -70,9 +70,8 @@ botao.addEventListener("click", () => {
 
                 atualizarContador();
 
-               document.getElementById("galeria").addEventListener("click", () => {
-    abrirGaleria();
-});
+                document.getElementById("galeria").addEventListener("click", () => {
+                    alert("Na próxima etapa vamos mostrar as fotos ❤️");
                 });
 
             });
