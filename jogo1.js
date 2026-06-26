@@ -35,7 +35,8 @@ function iniciarJogo1() {
         `;
 
         document.getElementById("proximoJogo").addEventListener("click", () => {
-            // Aqui vamos colocar o quiz.
+    iniciarQuiz();
+});
         });
     });
 }
