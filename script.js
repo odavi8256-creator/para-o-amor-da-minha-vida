@@ -45,12 +45,35 @@ botao.addEventListener("click", () => {
             `;
 
             document.getElementById("proximo").addEventListener("click", () => {
+
                 document.getElementById("inicio").innerHTML = `
-                    <h1>❤️ Em construção ❤️</h1>
-                    <p>
-                        Aqui vai entrar o contador, as fotos, a carta, a música e todas as surpresas.
-                    </p>
+                    <h1>❤️ Nossa História ❤️</h1>
+
+                    <p>Estamos juntos há:</p>
+
+                    <h2 id="contador"></h2>
+
+                    <br>
+
+                    <button id="galeria">📸 Ver nossas fotos</button>
                 `;
+
+                function atualizarContador() {
+                    const inicio = new Date("2026-06-20T00:00:00");
+                    const agora = new Date();
+
+                    const diferenca = agora - inicio;
+                    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+
+                    document.getElementById("contador").innerHTML = dias + " dias ❤️";
+                }
+
+                atualizarContador();
+
+                document.getElementById("galeria").addEventListener("click", () => {
+                    alert("Na próxima etapa vamos mostrar as fotos ❤️");
+                });
+
             });
 
         }, 7500);
