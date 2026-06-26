@@ -71,7 +71,7 @@ botao.addEventListener("click", () => {
                 atualizarContador();
 
                 document.getElementById("galeria").addEventListener("click", () => {
-                    alert("Na próxima etapa vamos mostrar as fotos ❤️");
+                 abrirGaleria();
                 });
 
             });
