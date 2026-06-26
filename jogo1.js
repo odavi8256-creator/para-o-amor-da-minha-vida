@@ -26,6 +26,7 @@ function iniciarJogo1() {
     `;
 
     document.getElementById("coracao").addEventListener("click", () => {
+
         document.getElementById("inicio").innerHTML = `
             <h1>🎉 Você encontrou meu coração! ❤️</h1>
 
@@ -35,8 +36,8 @@ function iniciarJogo1() {
         `;
 
         document.getElementById("proximoJogo").addEventListener("click", () => {
-    iniciarQuiz();
-});
+            iniciarQuiz();
         });
+
     });
 }
