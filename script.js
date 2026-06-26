@@ -1,39 +1,17 @@
-// Mensagem quando clicar no botão
-
 const botao = document.getElementById("entrar");
 
 botao.addEventListener("click", () => {
+    document.getElementById("inicio").innerHTML = `
+        <h1>❤️ Bem-vinda, Madu ❤️</h1>
 
-    alert("Bem-vinda ao nosso cantinho, Madu ❤️");
+        <p>
+            Esse não é um simples site...
+            <br><br>
+            É um pedacinho do meu coração feito especialmente para você.
+        </p>
 
+        <button onclick="alert('Em breve você vai entrar na experiência completa ❤️')">
+            Continuar ❤️
+        </button>
+    `;
 });
-
-// Chuva de corações
-
-const container = document.createElement("div");
-container.className = "hearts";
-document.body.appendChild(container);
-
-function criarCoracao() {
-
-    const coracao = document.createElement("div");
-
-    coracao.className = "heart";
-
-    coracao.innerHTML = "❤️";
-
-    coracao.style.left = Math.random() * 100 + "%";
-
-    coracao.style.fontSize = (15 + Math.random() * 30) + "px";
-
-    coracao.style.animationDuration = (4 + Math.random() * 5) + "s";
-
-    container.appendChild(coracao);
-
-    setTimeout(() => {
-        coracao.remove();
-    }, 9000);
-
-}
-
-setInterval(criarCoracao, 300);
