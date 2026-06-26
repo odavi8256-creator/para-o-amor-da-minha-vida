@@ -44,13 +44,16 @@ function iniciarQuiz() {
         });
     });
 
-    document.getElementById("finalizarQuiz").addEventListener("click", () => {
-        if (acertos === 3) {
-            document.getElementById("inicio").innerHTML = `
-                <h1>🎉 Parabéns! ❤️</h1>
-                <p>Você desbloqueou a próxima surpresa!</p>
+    document.getElementById("inicio").innerHTML = `
+    <h1>🎉 Parabéns! ❤️</h1>
+    <p>Você desbloqueou a próxima surpresa!</p>
+    <button id="continuar">💖 Continuar</button>
+`;
 
-                <button id="continuar">💖 Continuar</button>
+document.getElementById("continuar").addEventListener("click", () => {
+    iniciarJogo2();
+});
+                
             `;
         } else {
             alert("😂 Você ainda não acertou todas as perguntas!");
