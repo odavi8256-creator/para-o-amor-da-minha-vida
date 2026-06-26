@@ -7,6 +7,8 @@ function abrirGaleria() {
         <br><br>
 
         <button id="proximaFoto">➡️ Próxima Foto</button>
+        <br><br>
+<button id="irJogo1">🎮 Continuar</button>
     `;
 
     const fotos = [
@@ -28,4 +30,7 @@ function abrirGaleria() {
 
         document.getElementById("foto").src = fotos[indice];
     });
+document.getElementById("irJogo1").addEventListener("click", () => {
+    iniciarJogo1();
+});
 }
