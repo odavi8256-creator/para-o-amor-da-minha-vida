@@ -1,21 +1,22 @@
 function abrirCarta() {
     document.getElementById("inicio").innerHTML = `
-        <div class="carta" style="
-            max-width:800px;
-            margin:auto;
-            padding:20px;
-            text-align:center;
+        <div style="
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
         ">
             <h1>💌 Para o amor da minha vida 💌</h1>
 
             <div style="
-                background:white;
-                padding:25px;
-                border-radius:15px;
-                text-align:left;
-                line-height:1.8;
-                white-space:pre-line;
-                box-shadow:0 0 15px rgba(0,0,0,0.2);
+                background: white;
+                color: black;
+                padding: 25px;
+                border-radius: 15px;
+                text-align: left;
+                line-height: 1.8;
+                white-space: pre-line;
+                box-shadow: 0 0 15px rgba(0,0,0,0.2);
             ">
 Aí meu amor, eu qro te falar tanta coisa mas não consegui falar, acho que aqui é a melhor forma de te contar tudo e falar tudo que eu amo, resumindo, você.
 
