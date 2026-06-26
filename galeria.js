@@ -1,9 +1,8 @@
 function abrirGaleria() {
-
     document.getElementById("inicio").innerHTML = `
         <h1>📸 Nossas Fotos ❤️</h1>
 
-        <img id="foto" src="imagens/fotomadu1.jpg" width="300">
+        <img id="foto" src="imagens/foto1.jpg" width="300">
 
         <br><br>
 
@@ -11,11 +10,11 @@ function abrirGaleria() {
     `;
 
     const fotos = [
-        "imagens/fotomadu1.jpg",
-        "imagens/fotomadu2.jpg",
-        "imagens/fotomadu3.jpg",
-        "imagens/fotoeu1.jpg",
-        "imagens/fotoeu2.jpg"
+        "imagens/foto1.jpg",
+        "imagens/foto2.jpg",
+        "imagens/foto3.jpg",
+        "imagens/foto4.jpg",
+        "imagens/foto5.jpg"
     ];
 
     let indice = 0;
@@ -29,5 +28,4 @@ function abrirGaleria() {
 
         document.getElementById("foto").src = fotos[indice];
     });
-
 }
